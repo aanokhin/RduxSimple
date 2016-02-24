@@ -13,7 +13,6 @@ class SearchBar extends Component{
         <input
           value = {this.state.term}
           onChange={event =>{
-            console.log(event.target.value);
             this.setState( {term: event.target.value });
             }
           }
