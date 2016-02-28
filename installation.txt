@@ -1,0 +1,13 @@
+npm install --save vinyl-source-stream
+
+>npm install --save watchify browserify
+
+
+>npm install --save reactify gulp-server-livereload gulp-concat gulp-sass gulp-watch
+
+npm WARN deprecated npmconf@2.1.2: this package has been reintegrated into npm and is now out of date with respect to npm
+npm WARN deprecated graceful-fs@3.0.8: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
+npm WARN install Couldn't install optional dependency: Unsupported
+npm WARN deprecated react-tools@0.13.3: react-tools is deprecated. For more information, visit https://fb.me/react-tools-deprecated
+npm WARN prefer global react-tools@0.13.3 should be installed with -g
+npm WARN prefer global node-gyp@3.3.0 should be installed with -g
