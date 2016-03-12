@@ -20,11 +20,15 @@
   "dependencies": {
     "axios": "^0.9.1",
     "babel-preset-stage-1": "^6.1.18",
+    "isomorphic-fetch": "^2.2.1",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.0",
     "redux": "^3.0.4",
-    "redux-promise": "^0.5.1"
+    "redux-logger": "^2.6.1",
+    "redux-promise": "^0.5.1",
+    "redux-promise-middleware": "^2.3.3",
+    "redux-thunk": "^2.0.1"
   }
 }
