@@ -14,7 +14,6 @@ var fetchIt = function(url) {
 };
 export function fetchWeather(city) {
   let url = `${ROOT_URL}&q=${city},us`;
-  //let request = fetchit(url);
 
   console.log("Requesting Weather ",  url);
 

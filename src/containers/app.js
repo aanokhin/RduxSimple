@@ -1,9 +1,9 @@
 import React from 'react';
 import { Component, PropTypes } from 'react';
 import {connect} from 'react-redux';
-import SearchBar from '../containers/search_bar';
-import WeatherList from '../containers/weather_list';
-import { fetchWeather} from '../actions/index'
+import SearchBar from '../components/search_bar';
+import WeatherList from '../components/weather_list';
+import { fetchWeather} from '../actions/fetchIt'
 
 
 export default class App extends Component {

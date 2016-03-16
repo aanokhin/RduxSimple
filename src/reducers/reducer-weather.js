@@ -1,4 +1,4 @@
-import {FETCH_WEATHER} from '../actions/index'
+import {FETCH_WEATHER} from '../actions/fetchIt'
 const initialState = [];
 
 export default function(state = initialState, action) {
@@ -22,9 +22,14 @@ console.log('Action recieved: ', action);
           // action.payload.data);
         console.log('The newStatePart:', newStatePart);
         return  newStatePart;
-
+        break;
     case `${FETCH_WEATHER}_PENDING`:
         console.log('in pending state');
+        return state
+        break;
+    default:
+        return state;
+        break;
   }
-  return state
+
 }

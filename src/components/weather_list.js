@@ -44,10 +44,5 @@ WeatherList.defaultProps = {
 WeatherList.propTypes = {
   weather: PropTypes.array
 };
-// function mapStateToProps(state){    //({weather}) {
-//   return {weather : state.weather };
-// //  return { weather}; //{weather} === {weather:weather}
-// }
-//
+
  export default WeatherList;
- //connect(mapStateToProps)(WeatherList);
