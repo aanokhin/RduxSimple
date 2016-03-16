@@ -13,13 +13,14 @@ export default class App extends Component {
     this.handleFetch = this.handleFetch.bind(this);
   };
 
-  handleFetch(evt, city) {
-    const {dispatch} = this.props;
+  handleFetch( city) {
+      //evt.preventDefault();
+      const {dispatch} = this.props;
     dispatch(fetchWeather(city))
   };
 
   render() {
-    const {weather} = this.props
+    const {weather} = this.props;
     return (
       <div>
         <SearchBar handleFetch={this.handleFetch}/>
@@ -30,14 +31,17 @@ export default class App extends Component {
 }
 App.defaultProps = {
   weather: []
-}
+};
 App.propTypes = {
   weather: PropTypes.array.isRequired
-}
+//  handleFetch: PropTypes.func.isRequired
+};
 
 function mapStateToProps(state){    //({weather}) {
- console.log('This is app state: ', state);
-  return {weather : state.weatherRdc};
+ console.log('This is app state: ', state.WeatherReducer);
+  const weather= state.WeatherReducer;
+  return {weather};
+//  return {weather : state.WeatherReducer.weather};
 //  return { weather}; //{weather} === {weather:weather}
 }
 // function mapDispatchToProps(dispatch) {

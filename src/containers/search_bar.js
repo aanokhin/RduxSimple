@@ -19,13 +19,14 @@ export default class SearchBar extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
-
+    console.log('CALLED preventDefault()');
     this.props.handleFetch(this.state.term);
     this.setState({term: ''});
   }
 render () {
     return (
       <form
+        onSubmit={this.onFormSubmit}
         className="input-group">
         <input
           placeholder= "Get a five-day forecast in your favorite sities"
@@ -34,7 +35,7 @@ render () {
           onChange={this.onInputChange} />
 
         <span className="input-group-btn">
-          <button type="submit" onClick={e=>this.props.handleFetch(e,this.state.term)} className="btn btn-secondary">Submit</button>
+          <button type="submit" className="btn btn-secondary">Submit</button>
         </span>
       </form>
     );
